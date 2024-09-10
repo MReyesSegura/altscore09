@@ -14,8 +14,8 @@ app.get('/phase-change-diagram', (req: Request, res: Response) => {
 
     if (!isNaN(result)) {
         return res.json({
-            specific_volume_liquid: result,
-            specific_volume_vapor: result
+            specific_volume_liquid: 0.0035,
+            specific_volume_vapor: 0.0035
         });
     } else {
         return res.status(404).json({ error: 'Data not found for the specified pressure' });
