@@ -28,7 +28,7 @@ function calculateCriticalVolume(Pc2: number): number {
     }
 
     const Vc2 = (0.0035 * 10) / Pc2;
-    return truncateToFourDecimals(Vc2);
+    return Vc2;
 }
 
 function truncateToFourDecimals(num: number): number {
